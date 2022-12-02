@@ -49,6 +49,7 @@ std::unique_ptr<Pass> createConvertCudaRTtoGPUPass();
 std::unique_ptr<Pass> createConvertCudaRTtoHipRTPass();
 std::unique_ptr<Pass> createFixGPUFuncPass();
 std::unique_ptr<Pass> createSCFParallelLoopUnrollPass(int unrollFactor = 2);
+std::unique_ptr<Pass> createSubIndexToSubViewPass();
 std::unique_ptr<Pass>
 createConvertPolygeistToLLVMPass(const LowerToLLVMOptions &options,
                                  bool useCStyleMemRef, bool onlyGpuModules,

@@ -243,6 +243,10 @@ def RemoveTrivialUse : Pass<"trivialuse"> {
   let constructor = "mlir::polygeist::createRemoveTrivialUsePass()";
 }
 
+def SubIndexToSubView : Pass<"subindex-to-subview", "mlir::ModuleOp"> {
+  let constructor = "mlir::polygeist::createSubIndexToSubViewPass()";
+}
+
 def ConvertPolygeistToLLVM : Pass<"convert-polygeist-to-llvm", "mlir::ModuleOp"> {
   let summary = "Convert scalar and vector operations from the Standard to the "
                 "LLVM dialect";

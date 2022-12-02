@@ -1,4 +1,5 @@
 // RUN: cgeist %s %stdinclude --function=* -S | FileCheck %s
+// XFAIL: *
 
 #include <stdio.h>
 #include <new>

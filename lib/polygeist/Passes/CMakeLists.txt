@@ -14,6 +14,7 @@ add_mlir_dialect_library(MLIRPolygeistTransforms
   RaiseToAffine.cpp
   ParallelLower.cpp
   TrivialUse.cpp
+  SubIndexToSubView.cpp
   ConvertPolygeistToLLVM.cpp
   InnerSerialization.cpp
   ForBreakToWhile.cpp
